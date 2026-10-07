@@ -1,7 +1,11 @@
-# SEO Checklist — Vercel MVP
+# SEO Checklist — Vercel
 
-1. Create a GitHub repo and upload all files.
-2. In Vercel choose Add New → Project → Import the GitHub repo.
-3. Deploy. `vercel.json` configures the static frontend and `/api/scan` serverless function.
+Vercel-ready SEO audit MVP.
 
-The MVP checks HTTPS, title/meta, H1, viewport, canonical, language, alt text, thin content, noindex, Open Graph, JSON-LD, and samples up to 5 same-domain pages.
+- `index.html` — frontend
+- `styles.css` — styles
+- `app.js` — frontend logic
+- `api/scan.js` — Vercel serverless scanner
+- `package.json` — dependency configuration
+
+No custom `vercel.json` is required. Vercel's default routing serves the frontend and `/api/scan`.
